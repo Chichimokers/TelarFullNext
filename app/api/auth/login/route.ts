@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const user = queries.getAdminByUsername.get(username);
+    const user : any = queries.getAdminByUsername.get(username);
 
     if (!user) {
       return NextResponse.json(
