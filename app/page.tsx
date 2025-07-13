@@ -50,7 +50,7 @@ export default function Home() {
 
   const loadFabrics = async () => {
     try {
-      const response = await fetch('telas/api/fabrics')
+      const response = await fetch('/api/fabrics')
       if (response.ok) {
         const data = await response.json()
         setFabrics(data)

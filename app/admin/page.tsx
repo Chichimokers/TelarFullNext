@@ -63,7 +63,7 @@ export default function AdminPage() {
   const handleLogin = async () => {
     setLoading(true)
     try {
-      const response = await fetch('telas/api/auth/login', {
+      const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ export default function AdminPage() {
 
   const loadFabrics = async () => {
     try {
-      const response = await fetch('telas/api/fabrics')
+      const response = await fetch('/api/fabrics')
       if (response.ok) {
         const data = await response.json()
         setFabrics(data)
@@ -114,7 +114,7 @@ export default function AdminPage() {
       const formData = new FormData()
       formData.append('file', file)
 
-      const response = await fetch('telas/api/upload', {
+      const response = await fetch('/api/upload', {
         method: 'POST',
         body: formData,
       })
