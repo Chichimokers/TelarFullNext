@@ -146,7 +146,7 @@ export default function Home() {
     window.open(whatsappUrl, '_blank')
   }
 
-  const categories = [...new Set(fabrics.map(f => f.category))]
+  const categories = Array.from(new Set(fabrics.map(f => f.category)));
 
   if (loading) {
     return (
