@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/telas/',
+  basePath: '/telas',
   eslint: {
     ignoreDuringBuilds: true,
   },
