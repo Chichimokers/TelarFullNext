@@ -202,7 +202,7 @@ export default function AdminPage() {
 
   const handleDelete = async (id: number) => {
     try {
-      const response = await fetch(`telas/api/fabrics/${id}`, {
+      const response = await fetch(`/api/fabrics/${id}`, {
         method: 'DELETE',
       })
 
