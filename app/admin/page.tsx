@@ -144,7 +144,7 @@ export default function AdminPage() {
 
     setLoading(true)
     try {
-      const url = editingFabric ? `telas/api/fabrics/${editingFabric.id}` : 'telas/api/fabrics'
+      const url = editingFabric ? `/api/fabrics/${editingFabric.id}` : '/api/fabrics'
       const method = editingFabric ? 'PUT' : 'POST'
 
       const response = await fetch(url, {
