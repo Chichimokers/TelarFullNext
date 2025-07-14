@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
     await writeFile(filepath, buffer);
 
     // Return the public URL
-    const imageUrl = `/uploads/${filename}`;
+    const imageUrl = `telas/uploads/${filename}`;
     return NextResponse.json({ imageUrl });
   } catch (error) {
     console.error('Error uploading file:', error);
